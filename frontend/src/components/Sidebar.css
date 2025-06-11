@@ -1,0 +1,113 @@
+/* Sidebar.css */
+
+/* Sidebar container */
+.sidebar {
+  width: 240px !important; /* atur lebar fix sesuai yang diharapkan */
+  min-height: 100vh;
+  background-color: #fcf4cc !important;
+  color: #000000 !important;
+  border-right: none !important;
+  box-shadow: none !important;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sidebar header */
+.sidebar-header {
+  padding: 24px 16px;  /* beri padding agar teks tidak menempel */
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.sidebar-header h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+/* Navigation links */
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #000000;
+  padding: 12px 20px; /* lebih lega */
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  border-radius: 4px;
+  user-select: none;
+  font-size: 1rem;
+}
+
+/* Icon spacing */
+.nav-icon {
+  margin-right: 14px;
+  font-size: 18px;
+}
+
+/* Hover state */
+.nav-link:hover {
+  background-color: #64604d;
+  color: #fff;
+}
+
+/* Active link */
+.nav-link.active {
+  background-color: #64604d;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Logout button */
+.logout-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #000000;
+  padding: 12px 20px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  user-select: none;
+  font-size: 1rem;
+  margin-top: auto; /* dorong ke bawah footer */
+}
+
+.logout-btn:hover {
+  background-color: #1565c0;
+}
+
+/* Mobile toggle button */
+.mobile-toggle-btn {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: #1976d2;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 1200;
+  user-select: none;
+}
+
+/* Toggle btn (arrow left) */
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  user-select: none;
+}
